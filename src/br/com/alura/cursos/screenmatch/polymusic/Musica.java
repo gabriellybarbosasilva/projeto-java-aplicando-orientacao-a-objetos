@@ -1,6 +1,6 @@
 package br.com.alura.cursos.screenmatch.polymusic;
 
-public class Musica extends Audio implements Playlist {
+public class Musica extends Audio {
 
     private int year;
 
@@ -20,11 +20,4 @@ public class Musica extends Audio implements Playlist {
         System.out.println("Gênero: " + getAudioGenre());
     }
 
-    @Override
-    public void getplaylist() {
-        System.out.println("Nome do(a) artista: " + getArtist());
-        System.out.println("Nome da Música: " + getAudioName());
-        System.out.println("Duração: " + getAudioDurationInMinutes());
-        System.out.println("Ano de Lançamento: " + getYear());
-    }
 }

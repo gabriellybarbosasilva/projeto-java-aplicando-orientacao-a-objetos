@@ -46,13 +46,4 @@ public class Audio {
     public double getAudioDurationInMinutes() {
         return audioDurationInMinutes;
     }
-
-    // Método para somar a duração total de uma lista de áudios
-    public static double calculatePlaylistDuration(Audio[] audios) {
-        double totalDuration = 0;
-        for (Audio audio : audios) {
-            totalDuration += audio.getAudioDurationInMinutes();
-        }
-        return totalDuration;
-    }
 }

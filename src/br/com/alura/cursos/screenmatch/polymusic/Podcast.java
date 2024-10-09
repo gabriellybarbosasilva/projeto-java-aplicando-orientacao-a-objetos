@@ -1,6 +1,6 @@
 package br.com.alura.cursos.screenmatch.polymusic;
 
-public class Podcast extends Audio implements Playlist {
+public class Podcast extends Audio{
     private String description;
     private String date;
 
@@ -29,11 +29,4 @@ public class Podcast extends Audio implements Playlist {
         System.out.println("Gênero: " + getAudioGenre());
     }
 
-    @Override
-    public void getplaylist() {
-        System.out.println("Nome do Podcast: " + getArtist());
-        System.out.println("Nome do Áudio: " + getAudioName());
-        System.out.println("Descrição: " + getDescription());
-        System.out.println("Data de Lançamento: " + getDate());
-    }
 }
