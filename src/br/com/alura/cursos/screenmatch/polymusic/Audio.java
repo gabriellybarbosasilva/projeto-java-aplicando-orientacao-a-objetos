@@ -6,6 +6,11 @@ public class Audio {
     private double audioDurationInMinutes;
     private String audioGenre;
     private int numberOfViews;
+    private int classification;
+
+    public int getClassification() {
+        return classification;
+    }
 
     public String getArtist() {
         return artist;
@@ -39,7 +44,7 @@ public class Audio {
         return numberOfViews;
     }
 
-    public void setNumberOfViews(int numberOfViews) {
+    public void setNumberOfViews(int i) {
         this.numberOfViews = numberOfViews;
     }
 

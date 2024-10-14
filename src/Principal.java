@@ -2,9 +2,12 @@ import br.com.alura.cursos.screenmatch.polymusic.Musica;
 import br.com.alura.cursos.screenmatch.polymusic.Podcast;
 import br.com.alura.cursos.screenmatch.polymusic.escolha;
 
+import java.util.ArrayList;
 import java.util.Scanner;
 
 public class Principal implements escolha {
+
+
 
     @Override
     public void getformulario() {
@@ -73,8 +76,6 @@ public class Principal implements escolha {
         musica6.setNumberOfViews(318651503);
         musica6.setAudioGenre("Pop\n");
 
-
-
         Podcast podcast1 = new Podcast();
         podcast1.setArtist("O Assunto");
         podcast1.setAudioName("Vitórias e derrotas do 1º turno");
@@ -82,7 +83,9 @@ public class Principal implements escolha {
                 " os candidatos que representam a continuidade e que defendem partidos posicionados à direita.");
         podcast1.setAudioDurationInMinutes(32.82);
         podcast1.setDate("out. de 2024");
+        podcast1.setNumberOfViews(8374912);
         podcast1.setAudioGenre("Notícia\n");
+
 
 
         Podcast podcast2 = new Podcast();
@@ -93,6 +96,7 @@ public class Principal implements escolha {
                 "de um influenciador em meio a nomes premiados do mercado literário.");
         podcast2.setAudioDurationInMinutes(44.87);
         podcast2.setDate("out. de 2024");
+        podcast2.setNumberOfViews(150000);
         podcast2.setAudioGenre("Notícia\n");
 
         Podcast podcast3 = new Podcast();
@@ -104,6 +108,7 @@ public class Principal implements escolha {
                 "acusada de assassinato. Seu filho realmente nasceu sem vida?");
         podcast3.setAudioDurationInMinutes(20.47);
         podcast3.setDate("out. de 2024");
+        podcast3.setNumberOfViews(350000);
         podcast3.setAudioGenre("Thriller\n");
 
         Podcast podcast4 = new Podcast();
@@ -113,6 +118,7 @@ public class Principal implements escolha {
                 "o sangue de suas vítimas, que gerou pânico e caos em municípios isolados.");
         podcast4.setAudioDurationInMinutes(64.98);
         podcast4.setDate("set. de 2024");
+        podcast4.setNumberOfViews(500000);
         podcast4.setAudioGenre("Ufologia\n");
 
         Podcast podcast5 = new Podcast();
@@ -122,6 +128,7 @@ public class Principal implements escolha {
                 "com uma voz chorosa para se desculpar quando matava ou atacava uma mulher.");
         podcast5.setDate("set. de 2024");
         podcast5.setAudioDurationInMinutes(23.13);
+        podcast5.setNumberOfViews(250000);
         podcast5.setAudioGenre("Thriller\n");
 
         Podcast podcast6 = new Podcast();
@@ -132,11 +139,23 @@ public class Principal implements escolha {
                 "enfrentou na vida.");
         podcast6.setDate("set. de 2023");
         podcast6.setAudioDurationInMinutes(146);
+        podcast6.setNumberOfViews(800000);
         podcast6.setAudioGenre("História\n");
 
         Principal main = new Principal();
 
-        do {
+        ArrayList<Podcast> Podcasts = new ArrayList<>();
+        Podcasts.add(podcast1);
+        Podcasts.add(podcast2);
+        Podcasts.add(podcast3);
+        Podcasts.add(podcast4);
+        Podcasts.add(podcast5);
+        Podcasts.add(podcast6);
+        System.out.println("O tamanho da lista é de " + Podcasts.size() + "podcasts.");
+        System.out.println("O filme na posição 1 é: " + Podcasts.get(0));
+        System.out.println(Podcasts);
+
+        /*do {
 
             System.out.println("***********************************************************************************");
             System.out.println("Bem-vindo ao PolyMusic! Temos uma lista de músicas e podcasts que você pode gostar!");
@@ -146,6 +165,7 @@ public class Principal implements escolha {
 
             switch (choice) {
                 case 1:
+
                     System.out.println("\nVocê está ouvindo as músicas do momento!");
                     musica1.displaysMusicInformation();
                     musica2.displaysMusicInformation();
@@ -190,7 +210,7 @@ public class Principal implements escolha {
                     break;
             }
 
-        } while (choice != 4);
+        } while (choice != 4);*/
     }
 
 

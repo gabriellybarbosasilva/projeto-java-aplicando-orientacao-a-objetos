@@ -20,6 +20,11 @@ public class Podcast extends Audio{
         this.date = date;
     }
 
+    @Override
+    public String toString() {
+        return "O episódio é " + this.getAudioName() + " lançado em " + this.getDate();
+    }
+
     public void displaysPodcastInformation() {
         System.out.println("Nome do Podcast: " + getArtist());
         System.out.println("Nome do Áudio: " + getAudioName());
