@@ -3,7 +3,7 @@ import br.com.alura.cursos.screenmatch.polymusic.Podcast;
 import br.com.alura.cursos.screenmatch.polymusic.escolha;
 
 import java.util.ArrayList;
-import java.util.Scanner;
+//import java.util.Scanner;
 
 public class Principal implements escolha {
 
@@ -20,8 +20,8 @@ public class Principal implements escolha {
     }
 
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
-        int choice;
+        //Scanner scanner = new Scanner(System.in);
+        //int choice;
 
         Musica musica1 = new Musica("Tom Odell", "Black Friday", "2023");
         musica1.setAudioDurationInMinutes(3.7);
@@ -115,7 +115,7 @@ public class Principal implements escolha {
         podcast6.setNumberOfViews(800000);
         podcast6.setAudioGenre("História\n");
 
-        Principal main = new Principal();
+        //Principal main = new Principal();
 
         ArrayList<Podcast> Podcasts = new ArrayList<>();
         Podcasts.add(podcast1);
