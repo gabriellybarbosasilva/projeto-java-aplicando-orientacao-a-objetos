@@ -6,10 +6,20 @@ public class Audio {
     private double audioDurationInMinutes;
     private String audioGenre;
     private int numberOfViews;
-    private int classification;
+    private String date;
 
-    public int getClassification() {
-        return classification;
+    public String getDate() {
+        return date;
+    }
+
+    public void setDate(String date) {
+        this.date = date;
+    }
+
+    public Audio(String artist, String audioName, String date) {
+        this.artist = artist;
+        this.audioName = audioName;
+        this.date = date;
     }
 
     public String getArtist() {

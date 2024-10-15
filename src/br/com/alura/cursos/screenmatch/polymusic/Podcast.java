@@ -2,7 +2,10 @@ package br.com.alura.cursos.screenmatch.polymusic;
 
 public class Podcast extends Audio{
     private String description;
-    private String date;
+
+    public Podcast(String artist, String audioName, String date) {
+        super(artist, audioName, date);
+    }
 
     public String getDescription() {
         return description;
@@ -10,14 +13,6 @@ public class Podcast extends Audio{
 
     public void setDescription(String description) {
         this.description = description;
-    }
-
-    public String getDate() {
-        return date;
-    }
-
-    public void setDate(String date) {
-        this.date = date;
     }
 
     @Override

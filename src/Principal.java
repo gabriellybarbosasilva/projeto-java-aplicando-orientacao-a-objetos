@@ -23,121 +23,94 @@ public class Principal implements escolha {
         Scanner scanner = new Scanner(System.in);
         int choice;
 
-        Musica musica1 = new Musica();
-        musica1.setArtist("Tom Odell");
-        musica1.setAudioName("Black Friday");
+        Musica musica1 = new Musica("Tom Odell", "Black Friday", "2023");
         musica1.setAudioDurationInMinutes(3.7);
-        musica1.setYear(2023);
         musica1.setNumberOfViews(162339732);
         musica1.setAudioGenre("Indie\n");
 
 
-        Musica musica2 = new Musica();
-        musica2.setArtist("Cícero");
-        musica2.setAudioName("Açúcar ou Adoçante?");
+        Musica musica2 = new Musica("Cícero", "Açúcar ou Adoçante?", "2011");
         musica2.setAudioDurationInMinutes(4.37);
-        musica2.setYear(2011);
         musica2.setNumberOfViews(15641953);
         musica2.setAudioGenre("Indie\n");
 
 
-        Musica musica3 = new Musica();
-        musica3.setArtist("Billie Eilish");
-        musica3.setAudioGenre("CHIHIRO");
+        Musica musica3 = new Musica("Billie Eilish", "CHIHIRO", "2024");
         musica3.setAudioDurationInMinutes(5.05);
-        musica3.setYear(2024);
         musica3.setNumberOfViews(451967098);
         musica3.setAudioGenre("Indie\n");
 
 
-        Musica musica4 = new Musica();
-        musica4.setArtist("The Weeknd, JENNIE, Lily Rose Depp");
-        musica4.setAudioGenre("One Of The Girls");
+        Musica musica4 = new Musica(
+                "The Weeknd, JENNIE, Lily Rose Depp", "One Of The Girls", "2023");
         musica4.setAudioDurationInMinutes(4.07);
-        musica4.setYear(2023);
         musica4.setNumberOfViews(1278587882);
         musica4.setAudioGenre("Pop\n");
 
 
-        Musica musica5 = new Musica();
-        musica5.setArtist("Lady Gaga, Bruno Mars");
-        musica5.setAudioGenre("Die With A Smile");
+        Musica musica5 = new Musica("Lady Gaga, Bruno Mars", "Die With A Smile", "2024");
         musica5.setAudioDurationInMinutes(4.2);
-        musica5.setYear(2024);
         musica5.setNumberOfViews(535859412);
         musica5.setAudioGenre("Pop\n");
 
 
-        Musica musica6 = new Musica();
-        musica6.setArtist("Sabrina Carpenter");
-        musica6.setAudioGenre("Taste");
+        Musica musica6 = new Musica("Sabrina Carpenter", "Taste", "2024");
         musica6.setAudioDurationInMinutes(2.62);
-        musica6.setYear(2024);
         musica6.setNumberOfViews(318651503);
         musica6.setAudioGenre("Pop\n");
 
-        Podcast podcast1 = new Podcast();
-        podcast1.setArtist("O Assunto");
-        podcast1.setAudioName("Vitórias e derrotas do 1º turno");
+        Podcast podcast1 = new Podcast(
+                "O Assunto", "Vitórias e derrotas do 1º turno", "out. de 2024");
         podcast1.setDescription("No primeiro saldo das eleições municipais, quem saiu na frente foram" +
                 " os candidatos que representam a continuidade e que defendem partidos posicionados à direita.");
         podcast1.setAudioDurationInMinutes(32.82);
-        podcast1.setDate("out. de 2024");
         podcast1.setNumberOfViews(8374912);
         podcast1.setAudioGenre("Notícia\n");
 
 
 
-        Podcast podcast2 = new Podcast();
-        podcast2.setArtist("Café da Manhã");
-        podcast2.setAudioName("Felipe Neto: política, ódio, livros e Flip");
+        Podcast podcast2 = new Podcast(
+                "Café da Manhã", "Felipe Neto: política, ódio, livros e Flip", "out. de 2024");
         podcast2.setDescription("O anúncio de que Felipe Neto será um dos convidados da Flip, evento que " +
                 "começa na próxima quarta-feira (9), recebeu críticas nas redes sociais pela participação " +
                 "de um influenciador em meio a nomes premiados do mercado literário.");
         podcast2.setAudioDurationInMinutes(44.87);
-        podcast2.setDate("out. de 2024");
         podcast2.setNumberOfViews(150000);
         podcast2.setAudioGenre("Notícia\n");
 
-        Podcast podcast3 = new Podcast();
-        podcast3.setArtist("Quinta Misteriosa");
-        podcast3.setAudioName("O estranho caso de Alexee Trevizo");
+        Podcast podcast3 = new Podcast(
+                "Quinta Misteriosa", "O estranho caso de Alexee Trevizo", "out. de 2024");
         podcast3.setDescription("Alexee Trevizo, de 19 anos de idade, deu à luz ao seu filho no banheiro de um " +
                 "hospital, ela alegou que a criança nasceu morta e a única solução que encontrou " +
                 "em um momento de desespero foi colocar o bebê dentro do lixo. Meses depois, ela é " +
                 "acusada de assassinato. Seu filho realmente nasceu sem vida?");
         podcast3.setAudioDurationInMinutes(20.47);
-        podcast3.setDate("out. de 2024");
         podcast3.setNumberOfViews(350000);
         podcast3.setAudioGenre("Thriller\n");
 
-        Podcast podcast4 = new Podcast();
-        podcast4.setArtist("Operação Prato");
-        podcast4.setAudioName("Episódio 1 - Luzes no céu");
+        Podcast podcast4 = new Podcast(
+                "Operação Prato", "Episódio 1 - Luzes no céu", "set. de 2024");
         podcast4.setDescription("Maior caso ufológico da história do Brasil. Uma luz que se dizia capaz de sugar " +
                 "o sangue de suas vítimas, que gerou pânico e caos em municípios isolados.");
         podcast4.setAudioDurationInMinutes(64.98);
-        podcast4.setDate("set. de 2024");
         podcast4.setNumberOfViews(500000);
         podcast4.setAudioGenre("Ufologia\n");
 
-        Podcast podcast5 = new Podcast();
-        podcast5.setArtist("Quinta Misteriosa");
-        podcast5.setAudioName("O assassino da voz chorosa | Paul Stephani");
+        Podcast podcast5 = new Podcast(
+                "Quinta Misteriosa", "O assassino da voz chorosa | Paul Stephani", "set. de 2024"
+        );
         podcast5.setDescription("Por dois anos na década de 1980, um misterioso assassino ligava para a polícia " +
                 "com uma voz chorosa para se desculpar quando matava ou atacava uma mulher.");
-        podcast5.setDate("set. de 2024");
         podcast5.setAudioDurationInMinutes(23.13);
         podcast5.setNumberOfViews(250000);
         podcast5.setAudioGenre("Thriller\n");
 
-        Podcast podcast6 = new Podcast();
-        podcast6.setArtist("Felipe Castanhari");
-        podcast6.setAudioName("Michael Jackson - Culpado ou Inocente?");
+        Podcast podcast6 = new Podcast(
+                "Felipe Castanhari", "Michael Jackson - Culpado ou Inocente?", "set. de 2023"
+        );
         podcast6.setDescription("Culpado? Inocente? Conheça as alegações, as evidências e tudo o que se sabe " +
                 "- e que não se sabe - em todas as acusações de abuso sexual que Michael Jackson " +
                 "enfrentou na vida.");
-        podcast6.setDate("set. de 2023");
         podcast6.setAudioDurationInMinutes(146);
         podcast6.setNumberOfViews(800000);
         podcast6.setAudioGenre("História\n");
@@ -151,7 +124,7 @@ public class Principal implements escolha {
         Podcasts.add(podcast4);
         Podcasts.add(podcast5);
         Podcasts.add(podcast6);
-        System.out.println("O tamanho da lista é de " + Podcasts.size() + "podcasts.");
+        System.out.println("O tamanho da lista é de " + Podcasts.size() + " podcasts.");
         System.out.println("O filme na posição 1 é: " + Podcasts.get(0));
         System.out.println(Podcasts);
 
