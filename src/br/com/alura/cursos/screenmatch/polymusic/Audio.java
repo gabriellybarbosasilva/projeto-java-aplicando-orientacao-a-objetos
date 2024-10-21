@@ -1,12 +1,23 @@
 package br.com.alura.cursos.screenmatch.polymusic;
 
-public class Audio {
+public class Audio implements Comparable<Audio>{
     private String artist;
     private String audioName;
     private double audioDurationInMinutes;
     private String audioGenre;
     private int numberOfViews;
     private String date;
+    private int classificacao;
+
+
+
+    public int getClassificacao() {
+        return classificacao;
+    }
+
+    public void setClassificacao(int classificacao) {
+        this.classificacao = classificacao;
+    }
 
     public String getDate() {
         return date;
@@ -60,5 +71,15 @@ public class Audio {
 
     public double getAudioDurationInMinutes() {
         return audioDurationInMinutes;
+    }
+
+    @Override
+    public int compareTo(Audio outroAudio) {
+        return this.getAudioName().compareTo(outroAudio.getAudioName());
+    }
+
+    @Override
+    public String toString() {
+        return "Nome: " + getAudioName() + ", " + "Artista: " + getArtist() + ", " + "Data: " + getDate() + "\n";
     }
 }

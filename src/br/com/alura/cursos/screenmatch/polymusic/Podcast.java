@@ -17,7 +17,7 @@ public class Podcast extends Audio{
 
     @Override
     public String toString() {
-        return "O episódio é " + this.getAudioName() + " lançado em " + this.getDate();
+        return "Nome: " + this.getAudioName() + ", Classificação: " + this.getClassificacao() + "\n";
     }
 
     public void displaysPodcastInformation() {

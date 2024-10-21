@@ -8,6 +8,10 @@ public class Musica extends Audio {
         super(artist, audioName, date);
     }
 
+    @Override
+    public String toString() {
+        return "Nome: " + this.getAudioName() + ", Classificação: " + this.getClassificacao() + "\n";
+    }
 
     public void displaysMusicInformation() {
         System.out.println("Nome do(a) artista: " + getArtist());
